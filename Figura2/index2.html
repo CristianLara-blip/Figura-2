@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos2.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="registro">
+            <br><br><h1>Registro Estudiante</h1>
+            <br><br>
+            <h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNombres:</h3>
+            <input type="text" class="caja" id="nombres"  placeholder="" required="">
+            <h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSexo:</h3>
+            <form class="opt">
+                <input type="radio" id="femenino" name="grupo">&nbspFemenino&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="radio" id="masculino" name="grupo">&nbspMasculino
+            </form><br>
+            
+            
+            <h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCiclo:</h3>
+            <select name="ciclo" id="ciclo"  required="">
+                <option value="Ninguna">Seleccionar Escuela</option>
+                <option value="I" id="ciclo">I</option>
+                <option value="II" id="ciclo">II</option>
+                <option value="III" id="ciclo">III</option>
+                <option value="IV" id="ciclo">IV</option>
+                <option value="V" id="ciclo">V</option>
+                <option value="VI" id="ciclo">VI</option>
+                <option value="VII" id="ciclo">VII</option>
+                <option value="VIII" id="ciclo">VII</option>
+                <option value="9IX" id="ciclo">IX</option>
+                <option value="X" id="ciclo">X</option>
+            </select>
+            <h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspEscuela Profesional:</h3>
+           <select  name="escuela" id="escuela" required="">
+              <option value="Ninguna">Seleccionar Escuela </option>
+              <option value="Ing. Sistemas" id="escuela">Ing. Sistemas</option>
+              <option value="Inge. Civil" id="escuela">Inge. Civil</option>
+              <option value="Arquitectura" id="escuela">Arquitectura</option>
+            </select>
+
+            <button class="boton" onclick="agregar()">Guardar</button><br>
+            
+        </div>
+       <div class="tabla">
+            <table id="tablita">
+                <thead>
+                    <tr>
+                        <th><h3>Item</h3></th>
+                        <th><h3>Nombres</h3></th>
+                        <th><h3>Sexo</h3></th>
+                        <th><h3>Ciclo</h3></th>
+                        <th><h3>Escuela Profesional</h3></th>
+                        <th><h3>Acción</h3></th>
+                    </tr>
+                </thead>
+                <tbody id="datos">
+            
+                </tbody>
+            </table>
+       </div>
+    </div>
+
+    <script src="js/index2.js"></script>
+</body>
+</html>
