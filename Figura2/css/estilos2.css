@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+h1{
+    text-align: center;
+}
+.caja{
+    width: 300px;
+    height: 25px;
+    padding-left: 20px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    border: 2px solid rgb(76, 124, 255);
+    border-radius: 5px;
+    margin-left: 10%;
+   
+    
+}
+
+.boton{
+    margin-left: 243px;
+    width: 30%;
+    height: 40px;
+    background-color: #0c3450;
+    color: white;
+    border-radius: 8px;
+}
+ol{
+    text-align: center;
+}
+
+table{
+    width: 650px;
+    margin: 0 auto;
+
+}
+thead{
+    background-color: rgb(103, 220, 255);
+
+}
+
+h1{
+    color: red;
+}
+
+.registro{
+    margin-left: 25%;
+    margin-top: 20%;
+    border: 2px solid rgb(76, 124, 255);
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.tabla{
+    margin-left: 15%;
+    margin-top: 14%;
+}
+
+select{
+    width: 325px;
+    height: 28px;
+    padding-left: 20px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    border: 2px solid rgb(76, 124, 255);
+    border-radius: 5px;
+    margin-left: 10%;
+}
+
+.casilla{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

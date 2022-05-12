@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos2.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="registro">
+            <br><br><h1>Registro Estudiante</h1>
+            <br><br>
+            <h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNombres:</h3>
+            <input type="text" class="caja" id="nombres"  placeholder="" required="">
+            <h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSexo:</h3>
+            <input type="radio"  name="ec" class="casilla" id="sexo">Femenino<br>
+            <input type="radio"  name="ec" class="casilla" id="sexo"> Masculino<br>
+            
+            
+            <h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCiclo:</h3>
+            <select name="escuelas" id="ciclo"  required="">
+                <option value="0">Seleccionar Escuela</option>
+                <option value="1">I</option>
+                <option value="2">II</option>
+                <option value="3">III</option>
+                <option value="4">IV</option>
+                <option value="5">V</option>
+                <option value="6">VI</option>
+                <option value="7">VII</option>
+                <option value="8">VII</option>
+                <option value="9">IX</option>
+                <option value="10">X</option>
+              </select>
+            <h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspEscuela Profesional:</h3>
+           <select name="escuelas" id="escuelas"  id="escuela" required="">
+              <option value="0">Seleccionar Escuela </option>
+              <option value="1">Ing. Sistemas</option>
+              <option value="2">Inge. Civil</option>
+              <option value="3"> Arquitectura</option>
+            </select>
+
+            <button class="boton" onclick="agregar()">Guardar</button><br>
+            
+        </div>
+       <div class="tabla">
+            <table id="tablita" border="1">
+                <thead>
+                    <tr>
+                        <th><h3>Item</h3></th>
+                        <th><h3>Nombres</h3></th>
+                        <th><h3>Sexo</h3></th>
+                        <th><h3>Ciclo</h3></th>
+                        <th><h3>Escuela Profesional</h3></th>
+                        <th><h3>Acción</h3></th>
+                    </tr>
+                </thead>
+                <tbody id="datos">
+            
+                </tbody>
+            </table>
+       </div>
+    </div>
+
+    <script src="js/index2.js"></script>
+</body>
+</html>
